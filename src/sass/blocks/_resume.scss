@@ -1,0 +1,61 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: -10px;
+        }
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: minmax(240px, auto);
+        column-gap: 70px;
+        row-gap: 40px;
+        &-text {
+            margin-top: 5px;
+        }
+        &-img {
+            grid-row: 1/3;
+            img {
+                width: 100%;
+            }
+        }
+        &-descr {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-skills {
+            display: grid;
+            grid-template-columns: repeat(2, 260px);
+            grid-template-rows: repeat(2, minmax(116px, auto));
+            gap: 20px 50px;
+            &-item {
+                display: grid;
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+            &-img {
+                position: relative;
+                padding-left: 10px;
+                width: 40px;
+                height: 40px;
+                @include before_circle;
+                &:before {
+                    top: 0;
+                }
+            }
+            &-descr {
+                margin-top: 6px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }   
+}
+
+
