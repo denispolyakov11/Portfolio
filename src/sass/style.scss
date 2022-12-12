@@ -11,9 +11,15 @@
     padding: 0;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.policy {
+    p {
+        margin-left: 40px;
+    }
 }
 
 @import 'blocks/promo';
@@ -27,3 +33,4 @@
 @import 'blocks/skills';
 @import 'blocks/portfolio';
 @import 'blocks/price';
+@import 'blocks/contacts';

@@ -22,10 +22,10 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: -53px;
+                top: -16px;
                 left: 7px;
                 width: 1px;
-                height: calc(100% + 53px);
+                height: calc(100% + 16px);
                 background-color: #000;
                 
             }
@@ -55,7 +55,6 @@
         }
         &-head {
             width: 450px;
-            margin-top: 45px;
             display: flex;
             position: relative; 
             padding-left: 43px;
